@@ -2,7 +2,7 @@
     Frontend Crash Course
     2/18/16 - Translating Design to Code
 
-This repo will contain any code we write during the crash course. Our end goal is to learn enough about HTML / CSS to be able to slice up and reproduce the included `timeline.html` example.
+This repo will contain any code we write during the crash course. Our end goal is to learn enough about HTML / CSS to be able to slice up and reproduce [this timeline](http://jdabbs.com/tiy-design-dallas/index.html) (included as `reference.html`).
 
 # Key Concepts
 
