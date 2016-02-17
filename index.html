@@ -10,19 +10,13 @@
 		*, *::after, *::before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 		body, html { font-size: 100%; padding: 0; margin: 0;}
 
-		/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-		.clearfix::before, .clearfix::after { content: " "; display: table; }
-		.clearfix::after { clear: both; }
-
 		body {
 			font-family: 'Lato', Calibri, Arial, sans-serif;
 		}
 
 		.main {
-			width: 90%;
-			max-width: 69em;
+			width: 80%;
 			margin: 0 auto;
-			padding: 0 1.875em 3.125em 1.875em;
 		}
 
 		.header {
@@ -42,7 +36,7 @@
 			padding: 0;
 			list-style: none;
 			position: relative;
-		} 
+		}
 
 		.timeline li .label {
 			margin: 0 0 15px 25%;
@@ -60,13 +54,13 @@
 			background: #6cbfee;
 		}
 
-		.timeline li .label h2 { 
+		.timeline li .label h2 {
 			margin-top: 0px;
 			padding: 0 0 10px 0;
 			border-bottom: 1px solid rgba(255,255,255,0.4);
 		}
 
-		.timeline li .label::after {
+		.timeline li .label::before {
 			right: 100%;
 			border: solid transparent;
 			content: " ";
@@ -78,7 +72,7 @@
 			top: 10px;
 		}
 
-		.timeline li:nth-child(odd) .label::after {
+		.timeline li:nth-child(odd) .label::before {
 			border-right-color: #6cbfee;
 		}
 
@@ -108,22 +102,22 @@
 			color: #6cbfee;
 		}
 
-		.timeline::before {
+		.timeline .line {
 			content: '';
 			position: absolute;
 			top: 0;
-			bottom: 0;
+			bottom: -15px;
 			width: 10px;
 			background: #afdcf8;
 			left: 20%;
 			margin-left: -10px;
 		}
 
-		.icon::before {
+		.bubble::before {
 			content: "+";
 		}
 
-		.timeline li .icon {
+		.timeline li .bubble {
 			position: absolute;
 			left: 20%;
 			top: 0;
@@ -154,7 +148,8 @@
 			<ul class="timeline">
 				<li>
 					<div class="time"><span>2/10/16</span> <span>18:30</span></div>
-					<div class="icon"></div>
+          <div class="line"></div>
+					<div class="bubble"></div>
 					<div class="label">
 						<h2>Meow</h2>
 						<p>Walk on car leaving trail of paw prints on hood and windshield sleep nap. Stare at the wall, play with food and get confused by dust. Shake treat bag lick the plastic bag hack up furballs paw at beetle and eat it before it gets away and always hungry.</p>
@@ -162,7 +157,8 @@
 				</li>
 				<li>
 					<div class="time"><span>2/11/16</span> <span>12:04</span></div>
-					<div class="icon"></div>
+          <div class="line"></div>
+					<div class="bubble"></div>
 					<div class="label">
 						<h2>Chase red laser dot</h2>
 						<p>Lounge in doorway attack dog, run away and pretend to be victim scream at teh bath unwrap toilet paper. Under the bed. Lay on arms while you're using the keyboard eat a plant, kill a hand human give me attention meow but white cat sleeps on a black shirt. If it fits, i sits.</p>
@@ -170,7 +166,8 @@
 				</li>
 				<li>
 					<div class="time"><span>2/13/16</span> <span>05:36</span></div>
-					<div class="icon"></div>
+          <div class="line"></div>
+					<div class="bubble"></div>
 					<div class="label">
 						<h2>Leave fur on owners clothes</h2>
 						<p>You call this cat food? meow all night having their mate disturbing sleeping humans, stretch intrigued by the shower chase imaginary bugs present belly, scratch hand when stroked or rub face on owner. Sit in box.</p>
@@ -178,7 +175,8 @@
 				</li>
 				<li>
 					<div class="time"><span>2/15/16</span> <span>13:15</span></div>
-					<div class="icon"></div>
+          <div class="line"></div>
+					<div class="bubble"></div>
 					<div class="label">
 						<h2>Inspect anything brought into the house</h2>
 						<p>Purr for no reason. Swat at dog jump around on couch, meow constantly until given food, . Missing until dinner time chase mice, burrow under covers scratch leg; meow for can opener to feed me or stare at the wall, play with food and get confused by dust destroy couch as revenge damn that dog . Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce cat is love, cat is life or eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap behind the couch, but jump off balcony, onto stranger's head, cat snacks. If it smells like fish eat as much as you wish destroy couch.</p>
@@ -186,7 +184,8 @@
 				</li>
 				<li>
 					<div class="time"><span>2/16/16</span> <span>21:30</span></div>
-					<div class="icon"></div>
+          <div class="line"></div>
+					<div class="bubble"></div>
 					<div class="label">
 						<h2>Walk on car leaving trail of paw prints on hood and windshield</h2>
 						<p>Kitty loves pigs i like big cats and i can not lie need to chase tail, or hide head under blanket so no one can see present belly, scratch hand when stroked attack dog, run away and pretend to be victim meow all night having their mate disturbing sleeping humans. Attack feet the dog smells bad so present belly, scratch hand when stroked so destroy the blinds for love to play with owner's hair tie for eat and than sleep on your face jump around on couch, meow constantly until given food.</p>
@@ -194,7 +193,8 @@
 				</li>
 				<li>
 					<div class="time"><span>2/17/16</span> <span>12:11</span></div>
-					<div class="icon"></div>
+          <div class="line"></div>
+					<div class="bubble"></div>
 					<div class="label">
 						<h2>Curl into a furry donut scratch the furniture</h2>
 						<p>Scream at teh bath leave fur on owners clothes, swat at dog, and cat slap dog in face yet play riveting piece on synthesizer keyboard. Find empty spot in cupboard and sleep all day meowwww yet then cats take over the world eat and than sleep on your face meowwww.</p>
